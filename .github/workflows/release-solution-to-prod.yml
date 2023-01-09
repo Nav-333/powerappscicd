@@ -55,8 +55,7 @@ jobs:
         tenant-id: ${{ secrets.TENANT_ID }}
         solution-file: ${{ github.event.inputs.solution_outbound_folder}}/${{ github.event.inputs.solution_name }}.zip
         force-overwrite: true
-        async: true
-        max-async-wait-time: 60
+        run-asynchronously: true
         publish-changes: true
 
     - name: Export solution as managed
@@ -68,8 +67,7 @@ jobs:
         tenant-id: ${{ secrets.TENANT_ID }}
         solution-name: ${{ github.event.inputs.solution_name }}
         managed: true
-        async: true
-        max-async-wait-time: 60
+        run-asynchronously: true
         solution-output-file: ${{ github.event.inputs.solution_shipping_folder}}/${{ github.event.inputs.solution_name }}.zip
 
     - name: Upload the ready to ship solution to GH artifact store
@@ -103,8 +101,7 @@ jobs:
         tenant-id: ${{ secrets.TENANT_ID }}
         solution-file: ${{ github.event.inputs.solution_release_folder}}/${{ github.event.inputs.solution_name }}.zip
         force-overwrite: true
-        async: true 
-        max-async-wait-time: 60
+        run-asynchronously: true
         publish-changes: true
     
   release-to-staging:
@@ -132,6 +129,5 @@ jobs:
         tenant-id: ${{ secrets.TENANT_ID }}
         solution-file: ${{ github.event.inputs.solution_release_folder}}/${{ github.event.inputs.solution_name }}.zip
         force-overwrite: true
-        async: true
-        max-async-wait-time: 60
+        run-asynchronously: true
         publish-changes: true
