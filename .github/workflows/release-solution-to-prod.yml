@@ -35,19 +35,19 @@ jobs:
       name: 'Nav Env.'
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         lfs: true
 
     - name: Pack solution
-      uses: microsoft/powerplatform-actions/pack-solution@0.4.0
+      uses: microsoft/powerplatform-actions/pack-solution@v0
       with:
         solution-folder: ${{ github.event.inputs.solution_source_folder}}/${{ github.event.inputs.solution_name }}
         solution-file: ${{ github.event.inputs.solution_outbound_folder}}/${{ github.event.inputs.solution_name }}.zip
         solution-type: Unmanaged
 
     - name: Import solution as unmanaged to build env
-      uses: microsoft/powerplatform-actions/import-solution@0.4.0
+      uses: microsoft/powerplatform-actions/import-solution@v0
       with:
         environment-url: ${{ secrets.ENVIRONMENT_URL }}
         app-id: ${{ secrets.POWERPLATFORM_APPID }}
@@ -59,7 +59,7 @@ jobs:
         publish-changes: true
 
     - name: Export solution as managed
-      uses: microsoft/powerplatform-actions/export-solution@0.4.0
+      uses: microsoft/powerplatform-actions/export-solution@v0
       with:
         environment-url: ${{ secrets.ENVIRONMENT_URL }}
         app-id: ${{ secrets.POWERPLATFORM_APPID }}
@@ -83,7 +83,7 @@ jobs:
       name: 'Bilal Env.' 
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         lfs: true
 
@@ -93,7 +93,7 @@ jobs:
         name: managedSolutions
         path: ${{ github.event.inputs.solution_release_folder}}
     - name: Import solution to prod env
-      uses: microsoft/powerplatform-actions/import-solution@0.4.0
+      uses: microsoft/powerplatform-actions/import-solution@v0
       with:
         environment-url: ${{ secrets.ENVIRONMENT_URL }}
         app-id: ${{ secrets.POWERPLATFORM_APPID }}
@@ -111,7 +111,7 @@ jobs:
       name: 'Basit Env.' 
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         lfs: true
 
@@ -121,7 +121,7 @@ jobs:
         name: managedSolutions
         path: ${{ github.event.inputs.solution_release_folder}}
     - name: Import solution to prod env
-      uses: microsoft/powerplatform-actions/import-solution@0.4.0
+      uses: microsoft/powerplatform-actions/import-solution@v0
       with:
         environment-url: ${{ secrets.ENVIRONMENT_URL }}
         app-id: ${{ secrets.POWERPLATFORM_APPID }}
