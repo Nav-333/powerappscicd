@@ -1,0 +1,83 @@
+{
+  "properties": {
+    "connectionReferences": {},
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "2e29afba-d682-4302-b139-e2c47d843d2e"
+          },
+          "type": "Request",
+          "kind": "Button",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {},
+              "required": []
+            }
+          }
+        }
+      },
+      "actions": {
+        "Compose": {
+          "runAfter": {
+            "Yahan_divide_karrahy_hum_like_divided_by_Constent_15": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "3c284a1d-f8ef-4319-8632-40da21f81e88"
+          },
+          "type": "Compose",
+          "inputs": "@if(less(int(last(split(string(variables('Test Float')),'.'))),int(0)),int(first(split(string(variables('Test Float')),'.'))),add(int(first(split(string(variables('Test Float')),'.'))),1))"
+        },
+        "Yahan_divide_karrahy_hum_like_divided_by_Constent_15": {
+          "runAfter": {
+            "Suppose_woh_value_jisko_divide_karna_hai,_jo_ap_k_pas_aayegi_kaheen_se": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "7af491df-832c-4be6-a8e5-5e1fc5638562"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Test Float",
+                "type": "float",
+                "value": "@div(variables('ValtoDiv'),15)"
+              }
+            ]
+          }
+        },
+        "Suppose_woh_value_jisko_divide_karna_hai,_jo_ap_k_pas_aayegi_kaheen_se": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "41355f9e-abbf-4625-90d1-79a06fc2e79c"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "ValtoDiv",
+                "type": "integer",
+                "value": 13
+              }
+            ]
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

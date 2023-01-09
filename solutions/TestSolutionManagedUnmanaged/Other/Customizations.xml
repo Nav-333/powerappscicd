@@ -5,15 +5,29 @@
   <Workflows />
   <FieldSecurityProfiles />
   <Templates />
+  <ConnectionRoles />
   <EntityMaps />
   <EntityRelationships />
   <OrganizationSettings />
   <optionsets />
+  <Reports />
+  <Dashboards />
   <WebResources />
   <CustomControls />
+  <SolutionPluginAssemblies />
+  <SdkMessageProcessingSteps />
   <AppModuleSiteMaps />
   <AppModules />
   <EntityDataProviders />
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="itk_sharedcommondataserviceforapps_c2cb5">
+      <connectionreferencedisplayname>Microsoft Dataverse FinalAssessment-c2cb5</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
   <Languages>
     <Language>1033</Language>
   </Languages>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MailMergeTemplates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <mailmergetemplate id="{134212ac-d749-dc11-a46c-0019b9204ed3}" name="Follow-up to a Meeting" description="Use this template to thank contacts for meeting with you and to let them know you’ll be sending them a proposal." unmodified="1" />
+</MailMergeTemplates>

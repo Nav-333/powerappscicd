@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="bpf_itk_testentity_itk_testbpfcicd" />
   <EntityRelationship Name="business_unit_itk_testentity" />
+  <EntityRelationship Name="lk_itk_testbpfcicd_activestageid" />
+  <EntityRelationship Name="lk_itk_testbpfcicd_createdby" />
+  <EntityRelationship Name="lk_itk_testbpfcicd_modifiedby" />
+  <EntityRelationship Name="lk_itk_testbpfcicd_processid" />
   <EntityRelationship Name="lk_itk_testentity_createdby" />
   <EntityRelationship Name="lk_itk_testentity_modifiedby" />
+  <EntityRelationship Name="organization_itk_testbpfcicd" />
   <EntityRelationship Name="owner_itk_testentity" />
   <EntityRelationship Name="team_itk_testentity" />
   <EntityRelationship Name="user_itk_testentity" />

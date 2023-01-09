@@ -78,10 +78,26 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="itk_testbpfcicd" behavior="0" />
       <RootComponent type="1" schemaName="itk_testentity" behavior="0" />
+      <RootComponent type="9" schemaName="itk_applicationstatus" behavior="0" />
+      <RootComponent type="20" id="{5b94c5fd-b814-ed11-b83d-002248158f03}" behavior="0" />
+      <RootComponent type="29" id="{b454e72d-3d8d-ed11-81ad-002248158f03}" behavior="0" />
+      <RootComponent type="29" id="{b996cf9f-8d8d-ed11-81ad-002248158f03}" behavior="0" />
+      <RootComponent type="29" id="{ebcf820a-8d8d-ed11-81ad-002248158f03}" behavior="0" />
+      <RootComponent type="31" id="{d5a8ed47-8fee-ec11-bb3e-002248156477}" schemaName="1033{a788a3de-f207-4573-a983-7af0867a7857}" behavior="0" />
+      <RootComponent type="36" id="{65cce4bd-6e19-ed11-b83e-002248158f03}" behavior="0" />
+      <RootComponent type="39" id="{134212ac-d749-dc11-a46c-0019b9204ed3}" behavior="0" />
+      <RootComponent type="60" id="{795fe8fb-353e-ed11-bba2-002248158f03}" behavior="0" />
+      <RootComponent type="60" id="{aa2e870b-363e-ed11-bba2-002248158f03}" behavior="0" />
+      <RootComponent type="61" schemaName="itk_testcopy" behavior="0" />
       <RootComponent type="61" schemaName="itk_testingwr" behavior="0" />
       <RootComponent type="62" schemaName="itk_Test" behavior="0" />
+      <RootComponent type="63" id="{1eb54ab1-58b7-4d14-bf39-4f3e402616e8}" behavior="0" />
+      <RootComponent type="70" id="{46c73dd6-fdf8-ec11-82e6-002248158f03}" behavior="0" />
       <RootComponent type="80" schemaName="itk_Test" behavior="0" />
+      <RootComponent type="91" id="{937a415a-9c76-4cb2-9499-26428f75086b}" schemaName="Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c33d9d09e41e95b2" behavior="0" />
+      <RootComponent type="92" id="{8ccb2455-5f2b-ed11-9db1-002248158f03}" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>

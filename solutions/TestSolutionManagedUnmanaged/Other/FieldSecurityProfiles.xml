@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldSecurityProfiles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FieldSecurityProfile name="Phone on Manufacturer" fieldsecurityprofileid="{46c73dd6-fdf8-ec11-82e6-002248158f03}">
+    <FieldPermissions>
+      <FieldPermission>
+        <EntityName>account</EntityName>
+        <AttributeName>telephone1</AttributeName>
+        <CanRead>4</CanRead>
+        <CanUpdate>0</CanUpdate>
+        <CanCreate>0</CanCreate>
+      </FieldPermission>
+    </FieldPermissions>
+  </FieldSecurityProfile>
+</FieldSecurityProfiles>
