@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Testing.FollowupPlugin: GrantAccess of any Entity (Profiled)" SdkMessageProcessingStepId="{8ccb2455-5f2b-ed11-9db1-002248158f03}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SdkMessageId>c5bdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+  <PluginTypeName>Testing.FollowupPlugin, Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c33d9d09e41e95b2</PluginTypeName>
+  <PluginTypeId>ea3982c9-6bac-4c1b-aed6-d5f5361b395e</PluginTypeId>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <Description>Testing.FollowupPlugin: GrantAccess of any Entity</Description>
+  <FilteringAttributes></FilteringAttributes>
+  <InvocationSource>0</InvocationSource>
+  <Mode>0</Mode>
+  <Rank>1</Rank>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>20</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages />
+</SdkMessageProcessingStep>

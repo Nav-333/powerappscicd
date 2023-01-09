@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{eab89a61-1fa6-4899-96d8-09f5c55926a7}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{6cd8ec9a-46a7-4519-82e1-e49d125a0dfc}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{91544dec-e228-4b9f-b4c6-2323856658b8}">
+          <labels>
+            <label description="New Stage" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{c3c43865-2130-c729-a92f-85a0e8871de3}" name="StageStep3_section1" labelid="{56df64e0-6c0c-4a0d-b8bd-600e63e99dc2}">
+                  <labels>
+                    <label description="New Stage" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{79b1eb70-7551-42d1-9d24-cc8f732b3d5e}" showlabel="true" visible="true" labelid="{668e4381-a564-436a-9627-29245911158a}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_itk_testentity_itk_testbpfcicd:itk_name" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="itk_name" relationship="bpf_itk_testentity_itk_testbpfcicd" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

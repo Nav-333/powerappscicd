@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c33d9d09e41e95b2" PluginAssemblyId="937a415a-9c76-4cb2-9499-26428f75086b" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/Testing-937A415A-9C76-4CB2-9499-26428F75086B/Testing.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="Testing.FollowupPlugin, Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c33d9d09e41e95b2" PluginTypeId="ea3982c9-6bac-4c1b-aed6-d5f5361b395e" Name="Testing.FollowupPlugin">
+      <FriendlyName>ad4fc56f-b1d3-4582-a472-566570cf11a4</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

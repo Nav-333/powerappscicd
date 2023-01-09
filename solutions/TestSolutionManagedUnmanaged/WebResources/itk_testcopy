@@ -1,0 +1,78 @@
+function GetPriceandCalculateDiscount(executionContext)
+{
+    let formContext = executionContext.getFormContext();
+    try 
+    {
+       
+        if (formContext.getControl("itk_equipment"))
+        {
+            formContext.getControl("itk_equipment").clearNotification();
+            var entity=formContext.getAttribute("itk_manufacturer").getValue()[0].id;
+            if(entity != null){
+            Xrm.WebApi.online.retrieveMultipleRecords("itk_equipment", "?$filter=_itk_manufacturer_value eq  " + entity).then(
+	        function success(results) {
+                    for (var i = 0; i < results.entities.length; i++) {
+                        var result = results.entities[i];
+                        var itk_equipmentid = result["itk_equipmentid"];
+                        var itk_name=result["itk_name"];
+                        
+
+                        // price , discount and availibility > start
+                        var itk_price = result["itk_price"];
+                        formContext.getAttribute("itk_price").setValue(itk_price);
+                        var itk_availability = result["itk_availability"];
+                        if (itk_availability != null)
+                        {
+                            formContext.getAttribute("itk_availability").setValue(itk_availability);
+                        }
+                        else
+                        {
+                            formContext.getAttribute("itk_availability").setValue("");
+                        }
+                        
+                    
+                        Xrm.WebApi.online.retrieveMultipleRecords("account", "?$select=itk_discount&$filter=accountid eq "+ entity).then(
+                            function success(results) {
+                                console.log(results);
+                                for (var i = 0; i < results.entities.length; i++) {
+                                    var result = results.entities[i];
+                                    // Columns
+                                    var accountid = result["accountid"]; 
+                                    var itk_discount = result["itk_discount"]; 
+                                    formContext.getAttribute("itk_discountamount").setValue(itk_discount*itk_price/100);
+                                }
+                            },
+                            function(error) {
+                                console.log(error.message);
+                            }
+                        );
+                        
+                        // price , discount  and availibility > end
+                    }
+                },
+                function(error) {
+                    Xrm.Navigation.openErrorDialog({message: error.message}).then(
+                        function (success) {} ,
+                        function (error) {}
+                        );
+                 });
+        }
+    }
+}
+
+    catch (e)
+        {
+            let exmsg = "";
+            if (e.message)
+            {
+                exmsg += e.message;
+            }
+
+            if (e.stack)
+            {
+                exmsg += "! stack: " + e.stack;
+            }
+            
+            formContext.getControl("itk_equipment").setNotification("Equipment Field Must NOT be NULL.");
+        }
+}

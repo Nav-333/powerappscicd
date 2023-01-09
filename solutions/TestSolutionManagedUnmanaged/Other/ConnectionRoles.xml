@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConnectionRoles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ConnectionRoles>
+    <ConnectionRole>
+      <connectionroleid>{1eb54ab1-58b7-4d14-bf39-4f3e402616e8}</connectionroleid>
+      <name>Employer</name>
+      <category>1</category>
+      <IntroducedVersion>5.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{65528291-c5b4-411e-af2c-4723fa71ec3f}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>account</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+  </ConnectionRoles>
+</ConnectionRoles>

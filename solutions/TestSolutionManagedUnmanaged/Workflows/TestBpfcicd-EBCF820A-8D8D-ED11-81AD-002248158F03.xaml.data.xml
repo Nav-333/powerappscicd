@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{ebcf820a-8d8d-ed11-81ad-002248158f03}" Name="Test Bpf cicd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/TestBpfcicd-EBCF820A-8D8D-ED11-81AD-002248158F03.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>itk_testbpfcicd</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.7</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>itk_TestEntity</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Test Bpf cicd" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{6cd8ec9a-46a7-4519-82e1-e49d125a0dfc}">
+      <label languagecode="1033" description="New Stage" />
+    </steplabels>
+    <steplabels id="{79b1eb70-7551-42d1-9d24-cc8f732b3d5e}">
+      <label languagecode="1033" description="Name" />
+    </steplabels>
+  </labels>
+</Workflow>
