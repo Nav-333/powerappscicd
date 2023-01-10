@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.22113.172" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.22121.156" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>TestSolutionManagedUnmanaged</UniqueName>
     <LocalizedNames>
@@ -80,7 +80,6 @@
     <RootComponents>
       <RootComponent type="1" schemaName="itk_testbpfcicd" behavior="0" />
       <RootComponent type="1" schemaName="itk_testentity" behavior="0" />
-      <RootComponent type="9" schemaName="itk_applicationstatus" behavior="0" />
       <RootComponent type="20" id="{5b94c5fd-b814-ed11-b83d-002248158f03}" behavior="0" />
       <RootComponent type="29" id="{b454e72d-3d8d-ed11-81ad-002248158f03}" behavior="0" />
       <RootComponent type="29" id="{b996cf9f-8d8d-ed11-81ad-002248158f03}" behavior="0" />
@@ -96,6 +95,7 @@
       <RootComponent type="63" id="{1eb54ab1-58b7-4d14-bf39-4f3e402616e8}" behavior="0" />
       <RootComponent type="70" id="{46c73dd6-fdf8-ec11-82e6-002248158f03}" behavior="0" />
       <RootComponent type="80" schemaName="itk_Test" behavior="0" />
+      <RootComponent type="9" schemaName="itk_applicationstatus" behavior="0" />
       <RootComponent type="91" id="{937a415a-9c76-4cb2-9499-26428f75086b}" schemaName="Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c33d9d09e41e95b2" behavior="0" />
       <RootComponent type="92" id="{8ccb2455-5f2b-ed11-9db1-002248158f03}" behavior="0" />
     </RootComponents>
